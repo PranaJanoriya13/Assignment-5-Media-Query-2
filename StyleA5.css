@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(9, 4, 71, 0.952);
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;    
+}
+
+        /* Navition Bar  */
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 30px;
+    margin-right: 40px;
+    gap: 25px;
+}
+
+.menu   {
+    margin: 20px 0px 0px 30px;
+    width: 20px;
+    display:none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: beige;
+}
+
+        /* Section 1 */
+
+.top-section {
+    display: flex;
+}
+
+.tp1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+}
+
+.hay1   {
+    display: flex;
+    gap: 12px;
+}
+
+.hay {
+    width: 30px;
+    height: 33px;
+}
+
+p   {
+    font-size: 28px;
+    color: antiquewhite;
+}
+
+h1  {
+    font-size: 35px;
+    color: antiquewhite;
+}
+
+h2  {
+    line-height: 30px;
+    margin: 12px 0px 0px -10px;
+    color: rgb(255, 171, 62);
+}
+
+
+.pc {
+    width: 600px;
+    height: 600px;
+}
+
+/* Second Section  */
+
+.Bottom-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box3   {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px ;
+}
+
+.colorline1  {
+    height: 6px;
+    width: 130px;
+    background-color: rgb(4, 0, 255);
+}
+.box {
+    margin-left: 120px;
+    width: 250px;
+    height: 250px;
+}
+
+.box-main   {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+
+.box2 p {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+    /* Footer */
+
+footer  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.colorline2  {
+    height: 6px;
+    width: 250px;
+    background-color: rgb(4, 0, 255);
+}
+
+.sm {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+/* -------------------------------------
+------------- Media Qurey  -------------
+---------------------------------------- */
+
+@media ( max-width:566px ) {
+
+    /* Navition Bar */
+   nav ul {
+    display: none;
+   }
+
+   .menu {
+    display: block;
+   }
+
+   /* First Section */
+
+   .top-section {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 90px;
+   }
+
+   .pc  {
+    width: 280px;
+   }
+
+    /*  Second Section */
+   
+    .box-main  {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 20px ;
+
+    }
+
+    .box2 p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+
+   
+   
+}
+
+
+
